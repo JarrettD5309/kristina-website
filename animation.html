@@ -14,6 +14,36 @@
         #img-width-fix {
             width: 100%;
         }
+
+        #stomp-small {
+            display: none;
+        }
+
+        /* screen width from 0 to 400 */
+        @media screen and (max-width:400px) {
+
+            h3 {
+                font-size: 1.5rem;
+            }
+
+            #stomp-big {
+                display: none;
+            }
+
+            #stomp-small {
+                display: block;
+            }
+
+        }
+
+        /* screen width from 401 to 475 */
+        @media screen and (min-width:401px) and (max-width:475px) {
+
+            h3 {
+                font-size: 1.5rem;
+            }
+
+        }
     </style>
 
     <title>Animation</title>
@@ -58,7 +88,7 @@
                         everyday surroundings.</p>
                     <h3>Selected Animation Stills</h3>
                 </div>
-                
+
 
                 <div class="col-md-12">
                     <p class="mb-2"><cite>Puppet</cite>, 2016, video</p>
@@ -79,7 +109,8 @@
                     <p class="mb-2"><cite>The Objects are Not Enough</cite>, 2011, video</p>
                 </div>
                 <div class="col-md-4">
-                    <img src="assets/images/Kristina_Centore_Objects_001.jpg" class="img-fluid" id="img-width-fix" alt="Still from The Objects are Not Enough">
+                    <img src="assets/images/Kristina_Centore_Objects_001.jpg" class="img-fluid" id="img-width-fix"
+                        alt="Still from The Objects are Not Enough">
                 </div>
                 <div class="col-md-4 mt-3 mt-md-0">
                     <img src="assets/images/Kristina_Centore_Objects_002.jpg" class="img-fluid"
@@ -91,27 +122,29 @@
                     <p class="mb-2"><cite>CAAT</cite>, 2011, video</p>
                 </div>
                 <div class="col-md-4">
-                    <img src="assets/images/Kristina_Centore_CAAT_001.jpg" class="img-fluid"
-                        alt="Still from CAAT">
+                    <img src="assets/images/Kristina_Centore_CAAT_001.jpg" class="img-fluid" alt="Still from CAAT">
                 </div>
                 <div class="col-md-4 mt-3 mt-md-0">
-                    <img src="assets/images/Kristina_Centore_CAAT_002.jpg" class="img-fluid"
-                        alt="Still from CAAT">
+                    <img src="assets/images/Kristina_Centore_CAAT_002.jpg" class="img-fluid" alt="Still from CAAT">
                 </div>
                 <div class="col-md-4 mt-3 mt-md-0">
-                    <img src="assets/images/Kristina_Centore_CAAT_003.jpg" class="img-fluid"
-                        alt="Still from CAAT">
+                    <img src="assets/images/Kristina_Centore_CAAT_003.jpg" class="img-fluid" alt="Still from CAAT">
                 </div>
 
                 <div class="col-md-12 mt-5">
-                    <h3>The Stop Motion Stomp Station</h3>
-                    <p>The Stop Motion Stomp Station is a mobile workshop Centore developed to interactively teach the art of stop motion animation to the general public. It made appearances at Bartertown by artist Heather Hart at the DUMBO Arts Festival in 2012, 2013, and 2015, and Ladyfest Philadelphia in 2013.</p>
+                    <h3 id="stomp-big">The Stop Motion Stomp Station</h3>
+                    <h3 id="stomp-small">The Stop Motion<br>Stomp Station</h3>
+                    <p>The Stop Motion Stomp Station is a mobile workshop Centore developed to interactively teach the
+                        art of stop motion animation to the general public. It made appearances at Bartertown by artist
+                        Heather Hart at the DUMBO Arts Festival in 2012, 2013, and 2015, and Ladyfest Philadelphia in
+                        2013.</p>
                 </div>
                 <div class="col-md-8">
-                    <img src="assets/images/Kristina_Centore_The_Stop_Motion_Stomp_Station_001.jpg" class="img-fluid" alt="Photo of The Stop Motion Stomp Station">
-                </div>
+                    <img src="assets/images/Kristina_Centore_The_Stop_Motion_Stomp_Station_001.jpg" class="img-fluid"
+                        alt="Photo of The Stop Motion Stomp Station">
                 </div>
             </div>
+        </div>
         </div>
     </main>
 
