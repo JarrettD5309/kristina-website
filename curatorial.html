@@ -12,6 +12,11 @@
     <style>
     </style>
 
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/images/favicon/site.webmanifest">
+
     <title>Curatorial Projects</title>
 </head>
 
@@ -48,20 +53,31 @@
                     <h1>Curatorial Projects</h1>
                 </div>
                 <div class="col-md-12">
-                    <p class="mb-2">Layqa Nuna Yawar, <cite>Forever/Siempre</cite>, Space 1026, Philadelphia, PA (November 2-23, 2018)</p>
+                    <p class="mb-2 lead">Layqa Nuna Yawar, <cite>Forever/Siempre</cite>, Space 1026, Philadelphia, PA
+                        (November 2-23, 2018)</p>
                 </div>
-                <div class="col-md-12">
-                    <p class="mb-2">Marissa Paternoster, <cite>The Artist Need Not Suffer</cite>, Space 1026, Philadelphia, PA (January 6-27, 2017)</p>
-                </div>
-                
             </div>
+
+                <div class="row" id="layqa">
+
+                </div>
+                <hr>
+            <!-- <div class="row">
+                <div class="col-md-12 mt-2">
+                    <p class="mb-2 lead">Marissa Paternoster, <cite>The Artist Need Not Suffer</cite>, Space 1026,
+                        Philadelphia, PA (January 6-27, 2017)</p>
+                </div>
+
+            </div> -->
         </div>
 
-        
+
 
 
 
     </main>
+
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -74,6 +90,42 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
+
+    <script>
+
+        var layqaImg = [
+            "Kristina_Centore_Layqa_Thumb_001.jpg",
+            "Kristina_Centore_Layqa_Thumb_002.jpg",
+            "Kristina_Centore_Layqa_Thumb_003.jpg",
+            "Kristina_Centore_Layqa_Thumb_004.jpg",
+            "Kristina_Centore_Layqa_Thumb_005.jpg",
+            "Kristina_Centore_Layqa_Thumb_006.jpg",
+            "Kristina_Centore_Layqa_Thumb_007.jpg",
+            "Kristina_Centore_Layqa_Thumb_008.jpg",
+            "Kristina_Centore_Layqa_Thumb_009.jpg",
+            "Kristina_Centore_Layqa_Thumb_010.jpg",
+            "Kristina_Centore_Layqa_Thumb_011.jpg",
+            "Kristina_Centore_Layqa_Thumb_012.jpg",
+            "Kristina_Centore_Layqa_Thumb_013.jpg",
+            "Kristina_Centore_Layqa_Thumb_014.jpg",
+            "Kristina_Centore_Layqa_Thumb_015.jpg",
+        ]
+
+        for (var i = 0; i < layqaImg.length; i++) {
+            if (i === 0 || i % 3 === 0) {
+                var newCol = $("<div>").addClass("col-md-4 mt-4");
+                var newImg = $("<img>").attr("src", "assets/images/layqa/" + layqaImg[i]).addClass("img-fluid").attr("alt", "Photo from Forever/Siempre");
+                newCol.append(newImg);
+                $("#layqa").append(newCol);
+            } else {
+                var newCol = $("<div>").addClass("col-md-4 mt-4");
+                var newImg = $("<img>").addClass("img-fluid").attr("src", "assets/images/layqa/" + layqaImg[i]).attr("alt", "Photo from Forever/Siempre");
+                newCol.append(newImg);
+                $("#layqa").append(newCol);
+            }
+        }
+
+    </script>
 </body>
 
 </html>
