@@ -17,11 +17,54 @@
     <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
     <link rel="manifest" href="assets/images/favicon/site.webmanifest">
 
+    <style>
+        .carousel-control-next,
+        .carousel-control-prev {
+            filter: invert(100%);
+        }
+
+        /* .carousel-control-prev-icon {
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+        }
+
+        .carousel-control-next-icon {
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+        } */
+
+        /* screen width from 0 to 400 */
+        @media screen and (max-width:400px) {
+
+            img {
+                pointer-events: none;
+            }
+
+
+        }
+
+        /* screen width from 401 to 475 */
+        @media screen and (min-width:401px) and (max-width:475px) {
+
+            img {
+                pointer-events: none;
+            }
+
+        }
+
+        /* screen width from 476 to 768 */
+        @media screen and (min-width:476px) and (max-width:768px) {
+
+            img {
+                pointer-events: none;
+            }
+
+        }
+    </style>
+
     <title>Curatorial Projects</title>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
         <a class="navbar-brand" href="index.html">Kristina Centore</a>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -33,15 +76,16 @@
                 <li class="nav-item">
                     <a class="nav-link" href="index.html">Home</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="animation.html">Animation</a>
+                <li class="nav-item active">
+                    <a class="nav-link" href="curatorial.html">Curatorial Projects<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="writing.html">Writing</a>
                 </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="curatorial.html">Curatorial<span class="sr-only">(current)</span></a>
+                <li class="nav-item">
+                    <a class="nav-link" href="animation.html">Animation</a>
                 </li>
+                
             </ul>
         </div>
     </nav>
@@ -58,10 +102,10 @@
                 </div>
             </div>
 
-                <div class="row" id="layqa">
+            <div class="row" id="layqa">
 
-                </div>
-                <hr>
+            </div>
+            <hr>
             <!-- <div class="row">
                 <div class="col-md-12 mt-2">
                     <p class="mb-2 lead">Marissa Paternoster, <cite>The Artist Need Not Suffer</cite>, Space 1026,
@@ -76,6 +120,53 @@
 
 
     </main>
+
+    <!-- Layqa Modal -->
+    <div class="modal fade" id="layqa-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content rounded-0 border-0">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Layqa Nuna Yawar, <cite>Forever/Siempre</cite></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body p-0">
+                    <div id="layqaIndicators" class="carousel slide" data-ride="carousel" data-interval="false">
+                        <ol class="carousel-indicators">
+                            <li data-target="#layqaIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#layqaIndicators" data-slide-to="1"></li>
+                            <li data-target="#layqaIndicators" data-slide-to="2"></li>
+                            <li data-target="#layqaIndicators" data-slide-to="3"></li>
+                            <li data-target="#layqaIndicators" data-slide-to="4"></li>
+                            <li data-target="#layqaIndicators" data-slide-to="5"></li>
+                            <li data-target="#layqaIndicators" data-slide-to="6"></li>
+                            <li data-target="#layqaIndicators" data-slide-to="7"></li>
+                            <li data-target="#layqaIndicators" data-slide-to="8"></li>
+                            <li data-target="#layqaIndicators" data-slide-to="9"></li>
+                            <li data-target="#layqaIndicators" data-slide-to="10"></li>
+                            <li data-target="#layqaIndicators" data-slide-to="11"></li>
+                            <li data-target="#layqaIndicators" data-slide-to="12"></li>
+                            <li data-target="#layqaIndicators" data-slide-to="13"></li>
+                            <li data-target="#layqaIndicators" data-slide-to="14"></li>
+                        </ol>
+                        <div class="carousel-inner" id="modal-carousel-imgs">
+                            
+                        </div>
+                        <a class="carousel-control-prev" href="#layqaIndicators" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#layqaIndicators" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 
@@ -109,21 +200,68 @@
             "Kristina_Centore_Layqa_Thumb_013.jpg",
             "Kristina_Centore_Layqa_Thumb_014.jpg",
             "Kristina_Centore_Layqa_Thumb_015.jpg",
-        ]
+        ];
+
+        var layqaFullImg = [
+            "Kristina_Centore_Layqa_001.jpg",
+            "Kristina_Centore_Layqa_002.jpg",
+            "Kristina_Centore_Layqa_003.jpg",
+            "Kristina_Centore_Layqa_004.jpg",
+            "Kristina_Centore_Layqa_005.jpg",
+            "Kristina_Centore_Layqa_006.jpg",
+            "Kristina_Centore_Layqa_007.jpg",
+            "Kristina_Centore_Layqa_008.jpg",
+            "Kristina_Centore_Layqa_009.jpg",
+            "Kristina_Centore_Layqa_010.jpg",
+            "Kristina_Centore_Layqa_011.jpg",
+            "Kristina_Centore_Layqa_012.jpg",
+            "Kristina_Centore_Layqa_013.jpg",
+            "Kristina_Centore_Layqa_014.jpg",
+            "Kristina_Centore_Layqa_015.jpg",
+        ];
+
 
         for (var i = 0; i < layqaImg.length; i++) {
-            if (i === 0 || i % 3 === 0) {
-                var newCol = $("<div>").addClass("col-md-4 mt-4");
-                var newImg = $("<img>").attr("src", "assets/images/layqa/" + layqaImg[i]).addClass("img-fluid").attr("alt", "Photo from Forever/Siempre");
-                newCol.append(newImg);
-                $("#layqa").append(newCol);
+            var newCol = $("<div>").addClass("col-md-4 mt-4");
+            var newLink = $("<a>").attr("href", "#layqa-modal").attr("data-toggle", "modal").attr("data-slide-to", i);
+            var newImg = $("<img>").attr("src", "assets/images/layqa/" + layqaImg[i]).addClass("img-fluid").attr("alt", "Photo from Forever/Siempre");
+            newLink.append(newImg);
+            newCol.append(newLink);
+            $("#layqa").append(newCol);
+
+            if (i === 0) {
+
+                var newDiv = $("<div>").addClass("carousel-item active");
+
+                var newFullImg = $("<img>").attr("src", "assets/images/layqa/" + layqaFullImg[i]).addClass("d-block w-100").attr("alt", "Photo from Forever/Siempre");
+                newDiv.append(newFullImg);
+                $("#modal-carousel-imgs").append(newDiv);
+
             } else {
-                var newCol = $("<div>").addClass("col-md-4 mt-4");
-                var newImg = $("<img>").addClass("img-fluid").attr("src", "assets/images/layqa/" + layqaImg[i]).attr("alt", "Photo from Forever/Siempre");
-                newCol.append(newImg);
-                $("#layqa").append(newCol);
+
+                var newDiv = $("<div>").addClass("carousel-item");
+
+                var newFullImg = $("<img>").attr("src", "assets/images/layqa/" + layqaFullImg[i]).addClass("d-block w-100").attr("alt", "Photo from Forever/Siempre");
+                newDiv.append(newFullImg);
+                $("#modal-carousel-imgs").append(newDiv);
             }
+
+            // if (i === 0 || i % 3 === 0) {
+            //     var newCol = $("<div>").addClass("col-md-4 mt-4");
+            //     var newImg = $("<img>").attr("src", "assets/images/layqa/" + layqaImg[i]).addClass("img-fluid").attr("alt", "Photo from Forever/Siempre");
+            //     newCol.append(newImg);
+            //     $("#layqa").append(newCol);
+            // } else {
+            //     var newCol = $("<div>").addClass("col-md-4 mt-4");
+            //     var newImg = $("<img>").addClass("img-fluid").attr("src", "assets/images/layqa/" + layqaImg[i]).attr("alt", "Photo from Forever/Siempre");
+            //     newCol.append(newImg);
+            //     $("#layqa").append(newCol);
+            // }
         }
+
+        $("a[data-slide-to]").on("click", function () {
+            $("#layqaIndicators").carousel($(this).data("slide-to"));
+        });
 
     </script>
 </body>
