@@ -1,0 +1,170 @@
+a {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+/* INDEX */
+
+/* screen width from 0 to 359 */
+@media screen and (max-width:359px) {
+
+    .kristina {
+      width: 63%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+
+    }
+}
+
+/* screen width from 360 to 469 */
+@media screen and (min-width:360px) and (max-width:469px) {
+
+    .kristina {
+        width: 55%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+}
+
+/* screen width from 470 to 767 */
+@media screen and (min-width:470px) and (max-width:767px) {
+
+    .kristina {
+        width: 47%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+}
+
+/* END INDEX */
+
+/* ============================================== */
+
+/* ANIMATION */
+
+.animation-carousel {
+    filter: invert(100%);
+}
+
+#img-width-fix {
+    width: 100%;
+}
+
+#stomp-small {
+    display: none;
+}
+
+/* screen width from 0 to 400 */
+@media screen and (max-width:400px) {
+
+    img.animation {
+        pointer-events: none;
+    }
+
+    h3.animation-h3 {
+        font-size: 1.5rem;
+    }
+
+    #stomp-big {
+        display: none;
+    }
+
+    #stomp-small {
+        display: block;
+    }
+}
+
+/* screen width from 401 to 475 */
+@media screen and (min-width:401px) and (max-width:475px) {
+
+    img.animation {
+        pointer-events: none;
+    }
+
+    h3.animation-h3 {
+        font-size: 1.5rem;
+    }
+}
+
+/* screen width from 476 to 768 */
+@media screen and (min-width:476px) and (max-width:768px) {
+
+    img.animation {
+        pointer-events: none;
+    }
+}
+
+/* END ANIMATION */
+
+/* ============================================== */
+
+/* CURATORIAL */
+
+.curatorial-carousel {
+    filter: invert(100%);
+}
+
+/* screen width from 0 to 400 */
+@media screen and (max-width:400px) {
+
+    img.curatorial {
+        pointer-events: none;
+    }
+
+}
+
+/* screen width from 401 to 475 */
+@media screen and (min-width:401px) and (max-width:475px) {
+
+    img.curatorial {
+        pointer-events: none;
+    }
+
+}
+
+/* screen width from 476 to 768 */
+@media screen and (min-width:476px) and (max-width:768px) {
+
+    img.curatorial {
+        pointer-events: none;
+    }
+
+}
+
+@media (min-width: 576px) {
+    .modal-dialog-curatorial {
+        margin: 1rem auto;
+    }
+}
+
+@media (min-width: 992px) {
+    /* width of modal for paternoster */
+    .modal-sp {
+        max-width: 700px;
+    }
+}
+
+/* END CURATORIAL */
+
+/* ============================================== */
+
+/* WRITING */
+@media screen and (min-width: 577px) and (max-width: 991px) {
+    .writing-modal {
+        width: 90%;
+        max-width: 1200px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .writing-modal {
+        width: 850px;
+    }
+}
+
+/* END WRITING */

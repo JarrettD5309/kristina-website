@@ -7,80 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
 
-    <style>
-        .carousel-control-next,
-        .carousel-control-prev {
-            filter: invert(100%);
-        }
-
-        /* .carousel-control-prev-icon {
-            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
-        }
-
-        .carousel-control-next-icon {
-            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
-        } */
-
-        #img-width-fix {
-            width: 100%;
-        }
-
-        #stomp-small {
-            display: none;
-        }
-
-        /* screen width from 0 to 400 */
-        @media screen and (max-width:400px) {
-
-            img {
-                pointer-events: none;
-            }
-
-            h3 {
-                font-size: 1.5rem;
-            }
-
-            #stomp-big {
-                display: none;
-            }
-
-            #stomp-small {
-                display: block;
-            }
-
-        }
-
-        /* screen width from 401 to 475 */
-        @media screen and (min-width:401px) and (max-width:475px) {
-
-            img {
-                pointer-events: none;
-            }
-
-            h3 {
-                font-size: 1.5rem;
-            }
-
-        }
-
-        /* screen width from 476 to 768 */
-        @media screen and (min-width:476px) and (max-width:768px) {
-
-            img {
-                pointer-events: none;
-            }
-
-        }
-    </style>
-
+    <!-- Favicons -->
     <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
     <link rel="manifest" href="assets/images/favicon/site.webmanifest">
-    
+
     <title>Animation</title>
 </head>
 
@@ -106,7 +41,7 @@
                 <li class="nav-item active">
                     <a class="nav-link" href="animation.html">Animation<span class="sr-only">(current)</span></a>
                 </li>
-                
+
             </ul>
         </div>
     </nav>
@@ -123,7 +58,7 @@
                         visual language of Saturday morning cartoons. Through the use of claymation and the
                         incorporation of found materials, the works play with scale and posit new ways of experiencing
                         and thinking critically about everyday surroundings.</p>
-                    <h3>Selected Animation Stills</h3>
+                    <h3 class="animation-h3">Selected Animation Stills</h3>
                 </div>
 
 
@@ -131,18 +66,18 @@
                     <p class="mb-2"><cite>Puppet</cite>, 2016, video</p>
                 </div>
                 <div class="col-md-4">
-                    <a href="#puppet-one-modal" data-toggle="modal"><img
-                            src="assets/images/Kristina_Centore_Puppet_001.jpg" class="img-fluid"
+                    <a href="#puppet-modal" data-toggle="modal" data-slide-to="0"><img
+                            src="assets/images/Kristina_Centore_Puppet_001.jpg" class="img-fluid animation"
                             alt="Still from Puppet"></a>
                 </div>
                 <div class="col-md-4 mt-3 mt-md-0">
-                    <a href="#puppet-two-modal" data-toggle="modal"><img
-                            src="assets/images/Kristina_Centore_Puppet_002.jpg" class="img-fluid"
+                    <a href="#puppet-modal" data-toggle="modal" data-slide-to="1"><img
+                            src="assets/images/Kristina_Centore_Puppet_002.jpg" class="img-fluid animation"
                             alt="Still from Puppet"></a>
                 </div>
                 <div class="col-md-4 mt-3 mt-md-0">
-                    <a href="#puppet-three-modal" data-toggle="modal"><img
-                            src="assets/images/Kristina_Centore_Puppet_003.png" class="img-fluid border"
+                    <a href="#puppet-modal" data-toggle="modal" data-slide-to="2"><img
+                            src="assets/images/Kristina_Centore_Puppet_003.png" class="img-fluid border animation"
                             alt="Still from Puppet"></a>
                 </div>
 
@@ -151,13 +86,13 @@
                     <p class="mb-2"><cite>The Objects are Not Enough</cite>, 2011, video</p>
                 </div>
                 <div class="col-md-4">
-                    <a href="#objects-one-modal" data-toggle="modal"><img
-                            src="assets/images/Kristina_Centore_Objects_001.jpg" class="img-fluid" id="img-width-fix"
-                            alt="Still from The Objects are Not Enough"></a>
+                    <a href="#objects-modal" data-toggle="modal" data-slide-to="0"><img
+                            src="assets/images/Kristina_Centore_Objects_001.jpg" class="img-fluid animation"
+                            id="img-width-fix" alt="Still from The Objects are Not Enough"></a>
                 </div>
                 <div class="col-md-4 mt-3 mt-md-0">
-                    <a href="#objects-two-modal" data-toggle="modal"><img
-                            src="assets/images/Kristina_Centore_Objects_002.jpg" class="img-fluid"
+                    <a href="#objects-modal" data-toggle="modal" data-slide-to="1"><img
+                            src="assets/images/Kristina_Centore_Objects_002.jpg" class="img-fluid animation"
                             alt="Still from The Objects are Not Enough"></a>
                 </div>
 
@@ -166,410 +101,174 @@
                     <p class="mb-2"><cite>CAAT</cite>, 2011, video</p>
                 </div>
                 <div class="col-md-4">
-                    <a href="#caat-one-modal" data-toggle="modal"><img src="assets/images/Kristina_Centore_CAAT_001.jpg"
-                            class="img-fluid" alt="Still from CAAT"></a>
+                    <a href="#caat-modal" data-toggle="modal" data-slide-to="0"><img
+                            src="assets/images/Kristina_Centore_CAAT_001.jpg" class="img-fluid animation"
+                            alt="Still from CAAT"></a>
                 </div>
                 <div class="col-md-4 mt-3 mt-md-0">
-                    <a href="#caat-two-modal" data-toggle="modal"><img src="assets/images/Kristina_Centore_CAAT_002.jpg"
-                            class="img-fluid" alt="Still from CAAT"></a>
+                    <a href="#caat-modal" data-toggle="modal" data-slide-to="1"><img
+                            src="assets/images/Kristina_Centore_CAAT_002.jpg" class="img-fluid animation"
+                            alt="Still from CAAT"></a>
                 </div>
                 <div class="col-md-4 mt-3 mt-md-0">
-                    <a href="#caat-three-modal" data-toggle="modal"><img
-                            src="assets/images/Kristina_Centore_CAAT_003.jpg" class="img-fluid"
+                    <a href="#caat-modal" data-toggle="modal" data-slide-to="2"><img
+                            src="assets/images/Kristina_Centore_CAAT_003.jpg" class="img-fluid animation"
                             alt="Still from CAAT"></a>
                 </div>
 
                 <div class="col-md-12 mt-5">
-                    <h3 id="stomp-big">The Stop Motion Stomp Station</h3>
-                    <h3 id="stomp-small">The Stop Motion<br>Stomp Station</h3>
+                    <h3 class="animation-h3" id="stomp-big">The Stop Motion Stomp Station</h3>
+                    <h3 class="animation-h3" id="stomp-small">The Stop Motion<br>Stomp Station</h3>
                     <p>The Stop Motion Stomp Station is a mobile workshop Centore developed to interactively teach the
                         art of stop motion animation to the general public. It made appearances at Bartertown by artist
                         Heather Hart at the DUMBO Arts Festival in 2012, 2013, and 2015, and Ladyfest Philadelphia in
                         2013.</p>
                 </div>
                 <div class="col-md-8 mb-3">
-                    <img src="assets/images/Kristina_Centore_The_Stop_Motion_Stomp_Station_001.jpg" class="img-fluid"
-                        alt="Photo of The Stop Motion Stomp Station">
-                </div>
-            </div>
-        </div>
-
-        <!-- Puppet One Modal -->
-        <div class="modal fade" id="puppet-one-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog modal-lg" role="document">
-                <div class="modal-content rounded-0 border-0">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel"><cite>Puppet</cite>, 2016, video</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body p-0">
-                        <div id="puppetOneIndicators" class="carousel slide" data-ride="carousel" data-interval="false">
-                            <ol class="carousel-indicators">
-                                <li data-target="#puppetOneIndicators" data-slide-to="0" class="active"></li>
-                                <li data-target="#puppetOneIndicators" data-slide-to="1"></li>
-                                <li data-target="#puppetOneIndicators" data-slide-to="2"></li>
-                            </ol>
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="assets/images/Kristina_Centore_Puppet_001.jpg" class="d-block w-100"
-                                        alt="...">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="assets/images/Kristina_Centore_Puppet_002.jpg" class="d-block w-100"
-                                        alt="...">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="assets/images/Kristina_Centore_Puppet_003.png" class="d-block w-100"
-                                        alt="...">
-                                </div>
-                            </div>
-                            <a class="carousel-control-prev" href="#puppetOneIndicators" role="button"
-                                data-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Previous</span>
-                            </a>
-                            <a class="carousel-control-next" href="#puppetOneIndicators" role="button"
-                                data-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Next</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Puppet Two Modal -->
-        <div class="modal fade" id="puppet-two-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog modal-lg" role="document">
-                <div class="modal-content rounded-0 border-0">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel"><cite>Puppet</cite>, 2016, video</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body p-0">
-                        <div id="puppetTwoIndicators" class="carousel slide" data-ride="carousel" data-interval="false">
-                            <ol class="carousel-indicators">
-                                <li data-target="#puppetTwoIndicators" data-slide-to="0" class="active"></li>
-                                <li data-target="#puppetTwoIndicators" data-slide-to="1"></li>
-                                <li data-target="#puppetTwoIndicators" data-slide-to="2"></li>
-                            </ol>
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="assets/images/Kristina_Centore_Puppet_002.jpg" class="d-block w-100"
-                                        alt="...">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="assets/images/Kristina_Centore_Puppet_003.png" class="d-block w-100"
-                                        alt="...">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="assets/images/Kristina_Centore_Puppet_001.jpg" class="d-block w-100"
-                                        alt="...">
-                                </div>
-                            </div>
-                            <a class="carousel-control-prev" href="#puppetTwoIndicators" role="button"
-                                data-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Previous</span>
-                            </a>
-                            <a class="carousel-control-next" href="#puppetTwoIndicators" role="button"
-                                data-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Next</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Puppet Three Modal -->
-        <div class="modal fade" id="puppet-three-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog modal-lg" role="document">
-                <div class="modal-content rounded-0 border-0">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel"><cite>Puppet</cite>, 2016, video</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body p-0">
-                        <div id="puppetThreeIndicators" class="carousel slide" data-ride="carousel"
-                            data-interval="false">
-                            <ol class="carousel-indicators">
-                                <li data-target="#puppetThreeIndicators" data-slide-to="0" class="active"></li>
-                                <li data-target="#puppetThreeIndicators" data-slide-to="1"></li>
-                                <li data-target="#puppetThreeIndicators" data-slide-to="2"></li>
-                            </ol>
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="assets/images/Kristina_Centore_Puppet_003.png" class="d-block w-100"
-                                        alt="...">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="assets/images/Kristina_Centore_Puppet_001.jpg" class="d-block w-100"
-                                        alt="...">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="assets/images/Kristina_Centore_Puppet_002.jpg" class="d-block w-100"
-                                        alt="...">
-                                </div>
-                            </div>
-                            <a class="carousel-control-prev" href="#puppetThreeIndicators" role="button"
-                                data-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Previous</span>
-                            </a>
-                            <a class="carousel-control-next" href="#puppetThreeIndicators" role="button"
-                                data-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Next</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Objects One Modal -->
-        <div class="modal fade" id="objects-one-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog modal-lg" role="document">
-                <div class="modal-content rounded-0 border-0">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel"><cite>The Objects are Not Enough</cite>, 2011,
-                            video</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body p-0">
-                        <div id="objectsOneIndicators" class="carousel slide" data-ride="carousel"
-                            data-interval="false">
-                            <ol class="carousel-indicators">
-                                <li data-target="#objectsOneIndicators" data-slide-to="0" class="active"></li>
-                                <li data-target="#objectsOneIndicators" data-slide-to="1"></li>
-                            </ol>
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="assets/images/Kristina_Centore_Objects_001.jpg" class="d-block w-100"
-                                        alt="...">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="assets/images/Kristina_Centore_Objects_002.jpg" class="d-block w-100"
-                                        alt="...">
-                                </div>
-                            </div>
-                            <a class="carousel-control-prev" href="#objectsOneIndicators" role="button"
-                                data-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Previous</span>
-                            </a>
-                            <a class="carousel-control-next" href="#objectsOneIndicators" role="button"
-                                data-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Next</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Objects Two Modal -->
-        <div class="modal fade" id="objects-two-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog modal-lg" role="document">
-                <div class="modal-content rounded-0 border-0">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel"><cite>The Objects are Not Enough</cite>, 2011,
-                            video</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body p-0">
-                        <div id="objectsTwoIndicators" class="carousel slide" data-ride="carousel"
-                            data-interval="false">
-                            <ol class="carousel-indicators">
-                                <li data-target="#objectsTwoIndicators" data-slide-to="0" class="active"></li>
-                                <li data-target="#objectsTwoIndicators" data-slide-to="1"></li>
-                            </ol>
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="assets/images/Kristina_Centore_Objects_002.jpg" class="d-block w-100"
-                                        alt="...">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="assets/images/Kristina_Centore_Objects_001.jpg" class="d-block w-100"
-                                        alt="...">
-                                </div>
-                            </div>
-                            <a class="carousel-control-prev" href="#objectsTwoIndicators" role="button"
-                                data-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Previous</span>
-                            </a>
-                            <a class="carousel-control-next" href="#objectsTwoIndicators" role="button"
-                                data-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Next</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- CAAT One Modal -->
-        <div class="modal fade" id="caat-one-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog modal-lg" role="document">
-                <div class="modal-content rounded-0 border-0">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel"><cite>CAAT</cite>, 2011, video</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body p-0">
-                        <div id="caatOneIndicators" class="carousel slide" data-ride="carousel" data-interval="false">
-                            <ol class="carousel-indicators">
-                                <li data-target="#caatOneIndicators" data-slide-to="0" class="active"></li>
-                                <li data-target="#caatOneIndicators" data-slide-to="1"></li>
-                                <li data-target="#caatOneIndicators" data-slide-to="2"></li>
-                            </ol>
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="assets/images/Kristina_Centore_CAAT_001.jpg" class="d-block w-100"
-                                        alt="...">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="assets/images/Kristina_Centore_CAAT_002.jpg" class="d-block w-100"
-                                        alt="...">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="assets/images/Kristina_Centore_CAAT_003.jpg" class="d-block w-100"
-                                        alt="...">
-                                </div>
-                            </div>
-                            <a class="carousel-control-prev" href="#caatOneIndicators" role="button" data-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Previous</span>
-                            </a>
-                            <a class="carousel-control-next" href="#caatOneIndicators" role="button" data-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Next</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- CAAT Two Modal -->
-        <div class="modal fade" id="caat-two-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog modal-lg" role="document">
-                <div class="modal-content rounded-0 border-0">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel"><cite>CAAT</cite>, 2011, video</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body p-0">
-                        <div id="caatTwoIndicators" class="carousel slide" data-ride="carousel" data-interval="false">
-                            <ol class="carousel-indicators">
-                                <li data-target="#caatTwoIndicators" data-slide-to="0" class="active"></li>
-                                <li data-target="#caatTwoIndicators" data-slide-to="1"></li>
-                                <li data-target="#caatTwoIndicators" data-slide-to="2"></li>
-                            </ol>
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="assets/images/Kristina_Centore_CAAT_002.jpg" class="d-block w-100"
-                                        alt="...">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="assets/images/Kristina_Centore_CAAT_003.jpg" class="d-block w-100"
-                                        alt="...">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="assets/images/Kristina_Centore_CAAT_001.jpg" class="d-block w-100"
-                                        alt="...">
-                                </div>
-                            </div>
-                            <a class="carousel-control-prev" href="#caatTwoIndicators" role="button" data-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Previous</span>
-                            </a>
-                            <a class="carousel-control-next" href="#caatTwoIndicators" role="button" data-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Next</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- CAAT Three Modal -->
-        <div class="modal fade" id="caat-three-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog modal-lg" role="document">
-                <div class="modal-content rounded-0 border-0">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel"><cite>CAAT</cite>, 2011, video</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body p-0">
-                        <div id="caatThreeIndicators" class="carousel slide" data-ride="carousel" data-interval="false">
-                            <ol class="carousel-indicators">
-                                <li data-target="#caatThreeIndicators" data-slide-to="0" class="active"></li>
-                                <li data-target="#caatThreeIndicators" data-slide-to="1"></li>
-                                <li data-target="#caatThreeIndicators" data-slide-to="2"></li>
-                            </ol>
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="assets/images/Kristina_Centore_CAAT_003.jpg" class="d-block w-100"
-                                        alt="...">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="assets/images/Kristina_Centore_CAAT_001.jpg" class="d-block w-100"
-                                        alt="...">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="assets/images/Kristina_Centore_CAAT_002.jpg" class="d-block w-100"
-                                        alt="...">
-                                </div>
-                            </div>
-                            <a class="carousel-control-prev" href="#caatThreeIndicators" role="button"
-                                data-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Previous</span>
-                            </a>
-                            <a class="carousel-control-next" href="#caatThreeIndicators" role="button"
-                                data-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Next</span>
-                            </a>
-                        </div>
-                    </div>
+                    <img src="assets/images/Kristina_Centore_The_Stop_Motion_Stomp_Station_001.jpg"
+                        class="img-fluid animation" alt="Photo of The Stop Motion Stomp Station">
                 </div>
             </div>
         </div>
 
     </main>
+
+    <!-- Puppet Modal -->
+    <div class="modal fade" id="puppet-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content rounded-0 border-0">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel"><cite>Puppet</cite>, 2016, video</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body p-0">
+                    <div id="puppetIndicators" class="carousel slide pointer-event" data-ride="carousel"
+                        data-interval="false">
+                        <ol class="carousel-indicators">
+                            <li data-target="#puppetIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#puppetIndicators" data-slide-to="1"></li>
+                            <li data-target="#puppetIndicators" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="assets/images/Kristina_Centore_Puppet_001.jpg" class="d-block w-100"
+                                    alt="Still from Puppet">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/images/Kristina_Centore_Puppet_002.jpg" class="d-block w-100"
+                                    alt="Still from Puppet">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/images/Kristina_Centore_Puppet_003.png" class="d-block w-100"
+                                    alt="Still from Puppet">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev animation-carousel" href="#puppetIndicators" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next animation-carousel" href="#puppetIndicators" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Objects Modal -->
+    <div class="modal fade" id="objects-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content rounded-0 border-0">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel"><cite>The Objects are Not Enough</cite>, 2011,
+                        video</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body p-0">
+                    <div id="objectsIndicators" class="carousel slide pointer-event" data-ride="carousel"
+                        data-interval="false">
+                        <ol class="carousel-indicators">
+                            <li data-target="#objectsIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#objectsIndicators" data-slide-to="1"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="assets/images/Kristina_Centore_Objects_001.jpg" class="d-block w-100"
+                                    alt="Still from The Objects are Not Enough">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/images/Kristina_Centore_Objects_002.jpg" class="d-block w-100"
+                                    alt="Still from The Objects are Not Enough">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#objectsIndicators" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#objectsIndicators" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CAAT Modal -->
+    <div class="modal fade" id="caat-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content rounded-0 border-0">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel"><cite>CAAT</cite>, 2011, video</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body p-0">
+                    <div id="caatIndicators" class="carousel slide pointer-event" data-ride="carousel"
+                        data-interval="false">
+                        <ol class="carousel-indicators">
+                            <li data-target="#caatIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#caatIndicators" data-slide-to="1"></li>
+                            <li data-target="#caatIndicators" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="assets/images/Kristina_Centore_CAAT_001.jpg" class="d-block w-100"
+                                    alt="Still from CAAT">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/images/Kristina_Centore_CAAT_002.jpg" class="d-block w-100"
+                                    alt="Still from CAAT">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/images/Kristina_Centore_CAAT_003.jpg" class="d-block w-100"
+                                    alt="Still from CAAT">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev animation-carousel" href="#caatIndicators" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next animation-carousel" href="#caatIndicators" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -582,6 +281,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
+        <script src="assets/js/animation.js"></script>
 </body>
 
 </html>
