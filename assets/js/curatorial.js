@@ -4,15 +4,7 @@ var layqaImg = [
     "Kristina_Centore_Layqa_Thumb_003.jpg",
     "Kristina_Centore_Layqa_Thumb_004.jpg",
     "Kristina_Centore_Layqa_Thumb_005.jpg",
-    "Kristina_Centore_Layqa_Thumb_006.jpg",
-    "Kristina_Centore_Layqa_Thumb_008.jpg",
-    "Kristina_Centore_Layqa_Thumb_009.jpg",
-    "Kristina_Centore_Layqa_Thumb_010.jpg",
-    "Kristina_Centore_Layqa_Thumb_011.jpg",
-    "Kristina_Centore_Layqa_Thumb_012.jpg",
-    "Kristina_Centore_Layqa_Thumb_013.jpg",
-    "Kristina_Centore_Layqa_Thumb_014.jpg",
-    "Kristina_Centore_Layqa_Thumb_015.jpg"
+    "Kristina_Centore_Layqa_Thumb_006.jpg"
 ];
 
 var layqaFullImg = [
@@ -21,15 +13,7 @@ var layqaFullImg = [
     "Kristina_Centore_Layqa_003.jpg",
     "Kristina_Centore_Layqa_004.jpg",
     "Kristina_Centore_Layqa_005.jpg",
-    "Kristina_Centore_Layqa_006.jpg",
-    "Kristina_Centore_Layqa_008.jpg",
-    "Kristina_Centore_Layqa_009.jpg",
-    "Kristina_Centore_Layqa_010.jpg",
-    "Kristina_Centore_Layqa_011.jpg",
-    "Kristina_Centore_Layqa_012.jpg",
-    "Kristina_Centore_Layqa_013.jpg",
-    "Kristina_Centore_Layqa_014.jpg",
-    "Kristina_Centore_Layqa_015.jpg"
+    "Kristina_Centore_Layqa_006.jpg"
 ];
 
 var paternosterImg = [
@@ -41,11 +25,7 @@ var paternosterImg = [
     "Kristina_Centore_Paternoster_Thumb_006.jpg",
     "Kristina_Centore_Paternoster_Thumb_007.jpg",
     "Kristina_Centore_Paternoster_Thumb_008.jpg",
-    "Kristina_Centore_Paternoster_Thumb_009.jpg",
-    "Kristina_Centore_Paternoster_Thumb_010.jpg",
-    "Kristina_Centore_Paternoster_Thumb_011.jpg",
-    "Kristina_Centore_Paternoster_Thumb_012.jpg",
-    "Kristina_Centore_Paternoster_Thumb_013.jpg"
+    "Kristina_Centore_Paternoster_Thumb_011.jpg"
 ];
 
 var paternosterFullImg = [
@@ -57,11 +37,7 @@ var paternosterFullImg = [
     "Kristina_Centore_Paternoster_006.jpg",
     "Kristina_Centore_Paternoster_007.jpg",
     "Kristina_Centore_Paternoster_008.jpg",
-    "Kristina_Centore_Paternoster_009.jpg",
-    "Kristina_Centore_Paternoster_010.jpg",
-    "Kristina_Centore_Paternoster_011.jpg",
-    "Kristina_Centore_Paternoster_012.jpg",
-    "Kristina_Centore_Paternoster_013.jpg"
+    "Kristina_Centore_Paternoster_011.jpg"
 ];
 
 
