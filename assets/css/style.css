@@ -83,6 +83,10 @@ h1 {
         margin: 3px 0;
         padding-left: 3px;
     }
+
+    .nav-item:first-child {
+        margin-top: 3px;
+    }
 }
 
 @media screen and (min-width:768px) {
