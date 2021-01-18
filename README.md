@@ -1,6 +1,6 @@
 # Kristina Centore's Website
 <http://kristinacentore.com/> \
-Last Updated - Dec 20, 2020
+Last Updated - Jan 18, 2021
 
 ## Description
 Kristina Centore's professional website and portfolio was created and is maintained by myself, Jarrett Dougherty. The site utilizes HTML, CSS, client-side JavaScript, and Bootstrap. 
