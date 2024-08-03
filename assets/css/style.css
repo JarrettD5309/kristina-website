@@ -43,13 +43,13 @@ hr {
 } 
 
 .active .green-link:link {
-    border: black 1px solid;
-    color: black !important;
+    border: #806eb4 1px solid;
+    color: #806eb4 !important;
     
 }
 .active .green-link:visited {
-    border: black 1px solid;
-    color: black !important;
+    border: #806eb4 1px solid;
+    color: #806eb4 !important;
 }
 
 .green-link {
