@@ -165,64 +165,6 @@ hr {
 
 /* ============================================== */
 
-/* ANIMATION */
-
-.animation-carousel {
-    filter: invert(100%);
-}
-
-#img-width-fix {
-    width: 100%;
-}
-
-#stomp-small {
-    display: none;
-}
-
-/* screen width from 0 to 400 */
-@media screen and (max-width:400px) {
-
-    img.animation {
-        pointer-events: none;
-    }
-
-    h3.animation-h3 {
-        font-size: 1.5rem;
-    }
-
-    #stomp-big {
-        display: none;
-    }
-
-    #stomp-small {
-        display: block;
-    }
-}
-
-/* screen width from 401 to 475 */
-@media screen and (min-width:401px) and (max-width:475px) {
-
-    img.animation {
-        pointer-events: none;
-    }
-
-    h3.animation-h3 {
-        font-size: 1.5rem;
-    }
-}
-
-/* screen width from 476 to 768 */
-@media screen and (min-width:476px) and (max-width:768px) {
-
-    img.animation {
-        pointer-events: none;
-    }
-}
-
-/* END ANIMATION */
-
-/* ============================================== */
-
 /* CURATORIAL */
 
 .curatorial-carousel {
